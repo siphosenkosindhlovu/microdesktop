@@ -1,0 +1,4 @@
+<Files *.htm>
+	#Compress
+	SetOutputFilter DEFLATE
+</Files>
