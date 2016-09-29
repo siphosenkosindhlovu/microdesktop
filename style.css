@@ -9,15 +9,15 @@ body{
 }
 a:link, a:active, a:visited{
   text-decoration: none;
-  color: black
+  color: black;
 }
 #c-f{
-left: 3%;
-margin-right: 3%;
-width: 88%;
-margin-left: 0;
-padding-left: 3%;
-padding-right: 3%;
+  left: 3%;
+  margin-right: 3%;
+  width: 88%;
+  margin-left: 0;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 #c-f input,
 #c-f select,
@@ -91,7 +91,7 @@ label.close {
   right: 0;
   bottom: 0;
   margin: auto;
-  width: 320px;
+  width: 290px;
   height: 150px;
   border-radius: 5px 5px 0 0;
   padding:15px;
@@ -144,8 +144,8 @@ label.close {
   box-shadow: 0 0 5px #00A4E2;
 }
 .plate {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   text-align: center;
   padding: 0px;
@@ -187,7 +187,7 @@ span.label{
   opacity: 0;
   width: 100vw;
   height: 100vh;
-  overflow: scroll;
+  overflow: auto;
   background: rgba(245,245,245,0.95);
   border: 1px solid #ccc;
   box-shadow: 0 10px 100px #aaa;
@@ -245,6 +245,44 @@ span.label{
   background: #D2880F;
   font-size: 30px;
 }
+.tt {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tt .tttxt {
+    visibility: hidden;
+    width: 120px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tt .tttxt::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+}
+
+.tt:hover .tttxt {
+    visibility: visible;
+    opacity: 1;
+}
 @keyframes fade{
     0%{
       transform: translateY(20%);
@@ -292,7 +330,7 @@ span.label{
   /*Phablets and Tablets*/
   @media (min-width: 500px) {
     body{
-      background: url("Website-Design-Background.png");
+      background: url("Website-Design-Background.jpg");
       background-size: cover;
     }
     .m-h{
@@ -317,7 +355,7 @@ span.label{
       width: 600px
     }
     .cont{
-      width: 600px;
+      width: 550px;
       height: 80px
     }
   }
