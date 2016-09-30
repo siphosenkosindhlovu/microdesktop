@@ -349,7 +349,7 @@ span.label{
 
     .box{
       width: 680px;
-      height: 90%;
+      height: 100%;
     }
     .a-g{
       width: 600px
@@ -360,7 +360,7 @@ span.label{
     }
   }
 /*For landscape Devices*/
-  @media (orientation:landscape) and (max-width: 1440px) and (max-height:592px){
+  @media (orientation:landscape) and (max-height:592px){
     .m-h{
       margin: 0 auto;
       height: 150px;
