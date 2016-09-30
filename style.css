@@ -91,7 +91,7 @@ label.close {
   right: 0;
   bottom: 0;
   margin: auto;
-  width: 290px;
+  width: 270px;
   height: 150px;
   border-radius: 5px 5px 0 0;
   padding:15px;
@@ -355,7 +355,7 @@ span.label{
       width: 600px
     }
     .cont{
-      width: 550px;
+      width: 520px;
       height: 80px
     }
   }
